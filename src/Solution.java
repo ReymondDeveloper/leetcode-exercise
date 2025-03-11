@@ -4,18 +4,15 @@ import java.util.Map;
 
 class Solution {
 
-    public int repeatedNTimes(int[] nums) {
-        Map<Integer, Integer> hashMap = new HashMap<>();
+    public Map<String, String> mapShare(Map<String, String> map) {
 
-        for(int n : nums) {
-            hashMap.put( n, hashMap.getOrDefault(n,0) + 1);
+       if(map.containsKey("a")) {
+           map.put("b", map.get("a"));
+       }
 
-            if(hashMap.get(n) > 1) {
-                return n;
-            }
-        }
+       map.remove("c");
 
-        return -1;
+       return map;
     }
 
 }
