@@ -1,18 +1,23 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.Arrays;
 
 class Solution {
 
-    public Map<String, String> mapShare(Map<String, String> map) {
+    public static int[] plusOne(int[] digits) {
+        int n = digits.length;
 
-       if(map.containsKey("a")) {
-           map.put("b", map.get("a"));
-       }
+        for(int i = n-1; i >= 0; i--) {
+            if(digits[i] < 9) {
+                digits[i]++;
+                return digits;
+            }
 
-       map.remove("c");
+            digits[i] = 0;
+        }
 
-       return map;
+        int[] newNums = new int[n+1];
+        newNums[0] = 1;
+        return newNums;
+
     }
 
 }
