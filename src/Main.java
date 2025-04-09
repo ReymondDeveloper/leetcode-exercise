@@ -7,8 +7,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String[] k = {"a", "b"};
-        String[] v = {"Hi", "There"};
+//        String[] k = {"a", "b", "c"};
+//        String[] v = {"aaa", "bbb", "cake"};
+
+        String[] k = { "c"};
+        String[] v = { "cake"};
+
 
         Map<String, String> map = new HashMap<>();
 
@@ -16,7 +20,8 @@ public class Main {
             map.put(k[i], v[i]);
         }
 
-        Map<String, String> res = CodingBat.mapAB(map);
+        Map<String, String> res = CodingBat.mapAB3(map);
+
         System.out.println(res);
 
     }

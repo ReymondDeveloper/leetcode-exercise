@@ -2,13 +2,18 @@ import java.util.Map;
 
 public class CodingBat {
 
-    public static Map<String, String> mapAB (Map<String, String> map) {
+    public static Map<String,String > mapAB3 (Map<String,String> map) {
 
-        if(map.containsKey("a") && map.containsKey("b")) {
-            map.put("ab", map.get("a") + map.get("b"));
-
+        if(!map.containsKey("b") && !map.containsKey("a") ) {
+            return map;
         }
+        if(!map.containsKey("b") ) {
+            map.put("b", map.get("a"));
+        }
+        if(!map.containsKey("a"))
+            map.put("a", map.get("b"));
         return map;
+
     }
 
 
