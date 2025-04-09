@@ -1,22 +1,22 @@
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        String[] letter = { "b", "c", "d"};
+        String[] name = { "bymax", "christian", "dave"};
 
-        String[] name = {"Mark", "Paul", "Jacob", "Santos",};
-        int[] age = {33, 30, 25, 45};
-
-        HashMap<String, Integer> map = new HashMap<>();
-        for(int i = 0; i < name.length; i++) {
-            map.put(name[i], age[i]);
+        Map<String, String> map = new HashMap<>();
+        for(int i = 0; i < letter.length; i++) {
+            map.put(letter[i], name[i]);
         }
+        Map<String, String> res = CodingBat.mapShare(map);
 
-        for(Map.Entry<String, Integer > details: map.entrySet()) {
-            System.out.println("Name : "  + details.getKey() +  ", Age : " + details.getValue());
-        }
+        System.out.println(res);
 
     }
 
