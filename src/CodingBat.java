@@ -2,17 +2,14 @@ import java.util.Map;
 
 public class CodingBat {
 
+    public static Map<String, String> mapAB (Map<String, String> map) {
 
-    public static Map<String, String> mapShare(Map<String, String > map) {
+        if(map.containsKey("a") && map.containsKey("b")) {
+            map.put("ab", map.get("a") + map.get("b"));
 
-        if(map.containsKey("a")) {
-            map.put("b", map.get("a"));
-            map.remove("c");
-        } else {
-            map.remove("c");
         }
         return map;
-
     }
+
 
 }

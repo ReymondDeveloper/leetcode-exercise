@@ -7,15 +7,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String[] letter = { "b", "c", "d"};
-        String[] name = { "bymax", "christian", "dave"};
+        String[] k = {"a", "b"};
+        String[] v = {"Hi", "There"};
 
         Map<String, String> map = new HashMap<>();
-        for(int i = 0; i < letter.length; i++) {
-            map.put(letter[i], name[i]);
-        }
-        Map<String, String> res = CodingBat.mapShare(map);
 
+        for(int i = 0; i < k.length; i++) {
+            map.put(k[i], v[i]);
+        }
+
+        Map<String, String> res = CodingBat.mapAB(map);
         System.out.println(res);
 
     }
