@@ -4,36 +4,28 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        int count = 0;
+        int cand = 0;
 
-        int num ;
+        int[] nums = {2,1,1,1,2};
 
-        do{
 
-            System.out.println("Choose Your Destination");
-            System.out.println(" 1 All Data");
-            System.out.println(" 2 Search Postal Code");
-            System.out.println(" 3 Exit");
-            num = sc.nextInt();
-
-            switch (num) {
-                case 1 :
-                    System.out.println();
-                    DestinationWithPostalCode.GeneratePostalCode();
-                    break;
-                case 2 :
-                    System.out.println();
-                    System.out.println(" Input Postal Code ");
-                    num = sc.nextInt();
-                    DestinationWithPostalCode.GetPostalCode(num);
-                    System.out.println();
-                    break;
-                case 3 :
-                    System.out.println("Thank You For Using My Application Bye !!");
-                    break;
+        for(int i = 0; i < nums.length; i++) {
+            if(count == 0) {
+                cand = nums[i];
             }
-        }while (true);
 
+            if(cand==nums[i]){
+                count++;
+                System.out.println("Add " + count );
+            } else {
+                count--;
+                System.out.println("Minus " + count );
+            }
+
+        }
+
+        System.out.println(cand);
     }
 
 }

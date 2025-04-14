@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.HashMap;
 
 class Solution {
 
@@ -12,6 +13,13 @@ class Solution {
 //       }
 //       return res;
 //   }
+
+    public static int MajorityElement(int[] nums) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+            return 0;
+
+
+    }
 
 
 }
