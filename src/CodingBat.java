@@ -16,10 +16,30 @@ public class CodingBat {
 //
 //    }
 
-    public static Map<String, String> topping2(Map<String,String> map){
-        if(map.containsKey("ice cream")) map.put("yogurt", map.get("ice cream"));
-        if(map.containsKey("spinach")) map.replace("spinach","nuts");
+//    public static Map<String, String> topping2(Map<String,String> map){
+//        if(map.containsKey("ice cream")) map.put("yogurt", map.get("ice cream"));
+//        if(map.containsKey("spinach")) map.replace("spinach","nuts");
+//        return map;
+//    }
+
+    public static Map<String, String> mapAB4 (Map<String,String> map) {
+
+        String a = map.get("a");
+        String b = map.get("b");
+
+        if(a != null && b != null ) {
+            if (a.length() > b.length()) {
+                map.replace("c", map.get("a"));
+            } else if (b.length() > a.length()) {
+                map.replace("c", map.get("b"));
+            } else {
+                map.replace("a", "");
+                map.replace("b", "");
+            }
+        }
+
         return map;
+
     }
 
 

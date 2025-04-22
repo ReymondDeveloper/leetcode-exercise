@@ -5,17 +5,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-        Map<String, String> map = new HashMap<>();
-
-        map.put("ice cream", "cherry");
-        map.put("spinach", "dirt");
-
-        Map<String, String > answer = CodingBat.topping2(map);
-
-
-        for(Map.Entry<String, String> a: answer.entrySet()){
-            System.out.println(a.getKey() + " " + a.getValue());
+        HashMap<String,String> map = new HashMap<>();
+        map.put("a","aa");
+        map.put("b","bb");
+        map.put("c", "asd");
+        Map<String, String> ans = CodingBat.mapAB4(map);
+        for(Map.Entry<String, String> answer : ans.entrySet()){
+            System.out.println(answer.getKey() + "  " + answer.getValue());
         }
 
     }
