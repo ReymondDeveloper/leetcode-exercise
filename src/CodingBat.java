@@ -22,25 +22,42 @@ public class CodingBat {
 //        return map;
 //    }
 
-    public static Map<String, String> mapAB4 (Map<String,String> map) {
+//    public static Map<String, String> mapAB4 (Map<String,String> map) {
+//        String a = map.get("a");
+//        String b = map.get("b");
+//        if(a != null && b != null ) {
+//            if (a.length() > b.length()) {
+//                map.replace("c", map.get("a"));
+//            } else if (b.length() > a.length()) {
+//                map.replace("c", map.get("b"));
+//            } else {
+//                map.replace("a", "");
+//                map.replace("b", "");
+//            }
+//        }
+//        return map;
+//    }
 
-        String a = map.get("a");
-        String b = map.get("b");
+//    public static String stringTimes(String str, int repeat) {
+//
+//    }
 
-        if(a != null && b != null ) {
-            if (a.length() > b.length()) {
-                map.replace("c", map.get("a"));
-            } else if (b.length() > a.length()) {
-                map.replace("c", map.get("b"));
-            } else {
-                map.replace("a", "");
-                map.replace("b", "");
-            }
-        }
 
-        return map;
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
